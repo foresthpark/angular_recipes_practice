@@ -12,3 +12,16 @@ module.exports = {
     arrowParens: 'avoid',  // other option 'always'
     parser: 'typescript',
   };
+
+  // {
+  //   "printWidth": 80, 
+  //   "tabWidth": 4,    
+  //   "useTabs": true,  
+  //   "semi": true,
+  //   "singleQuote": true,
+  //   "trailingComma": "es5", 
+  //   "bracketSpacing": true,
+  //   "arrowParens": "avoid",  
+  //   "parser": "typescript"
+  // }
+  
