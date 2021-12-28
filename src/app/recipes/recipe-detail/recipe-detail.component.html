@@ -1,17 +1,18 @@
 <div class="row">
     <div class="col-xs-12">
-<img src="" alt="" class="img-responsive">
+        <img [src]="recipe?.imagePath" alt="" class="img-responsive" [ngStyle]="{maxHeight: '300px'}">
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <h1>Recipe Name</h1>
+        <h1>{{ recipe?.name }}</h1>
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <div class="btn-group">
-            <button class="btn btn-primary dropdown-toggle" type="button">Manage Recipe <span class="caret"></span></button>
+        <div class="btn-group" appDropdown>
+            <button class="btn btn-primary dropdown-toggle" type="button">Manage Recipe <span
+                    class="caret"></span></button>
             <ul class="dropdown-menu">
                 <li>
                     <a href="#">Shopping List</a>
@@ -24,11 +25,11 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-        Description
+        {{ recipe?.description }}
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
-      Ingredients
+        Ingredients
     </div>
 </div>
